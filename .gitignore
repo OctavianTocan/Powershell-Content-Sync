@@ -1,0 +1,50 @@
+# =============================================================================
+# Git Ignore Configuration for Asset Sync
+# =============================================================================
+# This file specifies which files should NOT be committed to Git.
+# Purpose: Protect sensitive credentials and personal configuration.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Temporary Files and Logs
+# -----------------------------------------------------------------------------
+# rclone temporary files and logs
+.rclone/*.log
+.rclone/*.tmp
+.rclone/cache/
+
+# Bisync database files (should be regenerated locally)
+.rclone/bisync/
+
+# -----------------------------------------------------------------------------
+# IDE and Editor Files
+# -----------------------------------------------------------------------------
+# Claude Code settings (may contain personal preferences)
+.claude/
+
+# Other common editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# -----------------------------------------------------------------------------
+# OS-Generated Files
+# -----------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+.directory
+
+# Environment Configuration Files
+.env
+.env.local
