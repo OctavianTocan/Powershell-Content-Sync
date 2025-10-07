@@ -5,7 +5,7 @@ Bidirectional asset synchronization using Google Drive and rclone. Designed for 
 ## What's Inside
 
 - `sync-assets.ps1` - The main sync script
-- `docs/` - Detailed documentation and guides
+- [Wiki](https://github.com/OctavianTocan/Powershell-Content-Sync/wiki) - Detailed documentation and guides
 - `.env` - Project-specific configuration
 - `.rclone/rclone.conf` - Shared rclone configuration (committed to Git)
 - `.rclone/service-account.json` - Service account credentials (gitignored, not shared)
